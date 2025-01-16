@@ -1,0 +1,97 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*background-color: #d53f3f;*/
+  overflow: hidden; /* Prevent scrolling on body */
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Center the form container and prevent it from overflowing */
+.form-container {
+  width: 100%;
+  max-width: 500px; /* Max width of the form */
+  padding: 20px;
+  background-color: #fc404075;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: auto; /* Allows scroll if form is too large */
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+  max-height: 90vh; /* Prevent the form from becoming too tall */
+}
+
+/* Styling for form */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label and Input field styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  height: 50px; /* Smaller height for textareas */
+  max-width: 100%; /* Ensure the textareas are responsive */
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Submit button styling */
+button {
+  background-color: transparent;
+  color: rgba(81, 2, 107, 0.601); /* Blue color for submit text */
+  padding: 10px 20px;
+  border: 2px solid rgb(97, 0, 97); /* Blue border */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(253, 55, 55);
+  color: white; /* Change text color to white on hover */
+}
+
+button:focus {
+  outline: none;
+}

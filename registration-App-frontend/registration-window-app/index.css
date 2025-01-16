@@ -1,0 +1,14 @@
+/* public/index.css */
+
+/* Apply a simple reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set the body to full height */
+  body {
+    height: 100%;
+  }
+  
